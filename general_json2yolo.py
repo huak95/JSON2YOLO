@@ -331,7 +331,7 @@ def show_kpt_shape_flip_idx(data):
             continue
         keypoints = category['keypoints']
         num = len(keypoints)
-        print('kpt_shape: [' + str(num) + ', 3]')
+        print(f'kpt_shape: [{num}, 3]')
         flip_idx = list(range(num))
         for i, name in enumerate(keypoints):
             name = name.lower()
